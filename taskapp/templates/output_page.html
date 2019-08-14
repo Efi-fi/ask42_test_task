@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+Output page
+{% for block in full_data %}
+    <li>{{ block.data }}</li>
+{% endfor %}
+{% endblock content %}
