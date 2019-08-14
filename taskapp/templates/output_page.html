@@ -5,4 +5,8 @@ Output page
 {% for block in full_data %}
     <li>{{ block.data }}</li>
 {% endfor %}
+<form method="post">
+    {% csrf_token %}
+    <button > Delete all </button>
+</form>
 {% endblock content %}
